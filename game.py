@@ -41,7 +41,7 @@ def room7():
 
 def room8():
     #room8
-    print("This door is locked.")
+    print("Welcome to the best game!")
 
 def room9():
     #room9
