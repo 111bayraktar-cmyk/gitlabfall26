@@ -93,7 +93,7 @@ def room17():
     print("Two Minute Drill")
 
 def room18():
-    #room18
+i   #room18
     #Cesar Cano
     print("Dark Gengar.")
 
@@ -103,7 +103,8 @@ def room19():
 
 def room20():
     #room20
-    print("This door is locked.")
+    #Benson Chau
+    print("Big Bang Theory Sim")
 
 def room21():
     #room21
