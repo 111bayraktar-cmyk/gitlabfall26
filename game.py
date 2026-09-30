@@ -29,7 +29,6 @@ def room4():
     #room4
     #Alejandra Ibarra
     print("Pokemon Master")
-    #Alejandra Ibarra
 
     newlist = ["Pick a starter pokemon:","1.Piplup","2.Chimchar","3.Turtwig"]
         
