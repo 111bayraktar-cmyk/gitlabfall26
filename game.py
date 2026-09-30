@@ -20,10 +20,161 @@ def room2():
     #room2
     print("This door is locked.")
 
+
 def room3():
     #room3
     #Arpita Shah
-    print("Let's Mathify this game.")
+    again = "yes"
+
+    def choice1(input1):
+        print("")
+        print("You discover a dusty old map showing escape route. What do you want to do with map?")
+        print("")
+        print("1. Follow the marked trail")
+        print("2. Ignore the map and explore freely")
+        print("3. Tear the map open (something is inside)")
+        option1 = int(input("Choose one of the following options."))
+        if option1==1:
+            print( name, " , as you are following the marked trail, you found the old bunker.")
+            option10=choice2(option1)
+            return option10
+        elif option1==2:
+            print( name, " , since you ignored the map;")
+            option11=choice4(option1)
+            return option11
+        elif option1==3:
+            print(name, ", you tear the map open and find a metal key which you used to call tribal warrior.")
+            option12 = choice2(option1)
+            return option12
+    
+        
+    
+    def choice2(input2):
+        print("")
+        print("A tribal warrior appears and calls out to you.")
+        print("")
+        print("1. Ask the warrior for help")  
+        print("2. Hide behind rocks")
+        print("3. Offer the metal key you found")
+        option3 = int(input("What do you choose? "))
+        if option3==2:
+            print(name,", as you were hiding behind the underground door.")
+            option13= choice4(option3)
+            return option13  
+        if option3==1:
+            print (name, ", a warrior appear in front of you and showed you the cave")
+            option14= choice3(option3)
+            return option14
+        if option3==3:
+            print(name, ", in exchange of the metal key you warrior showed you a way to the island.")
+            option15= choice5(option3)
+            return option15
+    
+    def choice3(input3):
+        print("")
+        print("You reach the base of the volcano. Smoke fills the air.")
+        print("")
+        print("1. Enter the lava tube tunnel")  
+        print("2. Climb the outer ridge")
+        print("3. Search for the old bunker")
+        option4 = int(input("What do you choose? "))
+        if option4==1:
+            print(name, ", you have reached to the end of the tunnel.")
+            option16= choice5(option4)
+            return option16
+        if option4==2:
+            print(name, ", you have found a key on the way the island.")
+            option17= choice2(option4)
+            return option17
+        if option4==3:
+            print(name, ", you found the old map in the old bunker.")
+            option18=choice1(option4)
+            return option18
+    
+    def choice4(input4):
+        print("")
+        print("A loud alarm blares—the final evacuation is happening now!")
+        print("")
+        print("1. Board the rescue helicopter")  
+        print("2. Sail away on a wooden raft")
+        print("3. Ride a zipline across the canyon")
+        option5 = int(input("What do you choose? "))
+        if option5 == 1:
+            print("The helicopter lifts off just as the volcano erupts." ,name , " , you have successfully escaped Volcano Island!")
+        elif option5 == 2:
+            print("The raft carries you away, but the waves grow violent.", name, ", you barely escape with your life!")
+        elif option5 == 3:
+            print("The zipline snaps halfway across the canyon.", name, ", you fall into the jungle and perish.")
+        else:
+            print(name, "your hesitation costs you precious time. The volcano erupts and you do not survive.")
+        
+        return option5
+    
+    def choice5(input5):
+        print("")
+        print("You walk deeper into the island and reach a dangerous crossroads.")
+        print("The volcano shakes violently, and you must choose quickly.")
+        print("")
+        print("1. Cross the shaky wooden bridge")
+        print("2. Crawl through a narrow lava tunnel")
+        print("3. Climb the steep rocky cliff")
+        print("4. Follow the hidden path behind the waterfall")
+        option6 = int(input("What do you choose? "))
+    
+        while option6 < 1 or option6 > 4:
+            option6 = int(input("Choose option from above. What do you choose? "))
+    
+        if option6 == 1:
+            print(name, ", you carefully cross the shaky bridge and reach a safe zone.")
+            return choice4(option6)
+    
+        elif option6 == 2:
+            print(name, ", you crawl through the lava tunnel and barely escape the heat.")
+            return choice4(option6)
+    
+        elif option6 == 3:
+            print(name, ", you climb the cliff and see the evacuation area from above.")
+            return choice4(option6)
+    
+        elif option6 == 4:
+            print(name, ", you follow the hidden path and discover a secret rescue station!")
+            return choice4(option6)
+    
+     #Main body
+    name = str(input("Welcome traveler!  What is your name? "))
+    while again =="yes" or again == "Yes" or again== "YES":
+    
+        
+        print("Hello ", name , " you wake up on a mysterious island.  The ground shakes beneath you. A volcano at the center of the island is about to erupt.  You must escape")
+        print(" ")
+        print(" You see three possible paths in front of you. ")
+        print ("************************************************************")
+        print ("1. Climb the watch tower")
+        print ("2. Go to the jungle")
+        print ("3. Go to the beach")
+        print ("************************************************************")
+        option= int(input("what do you choose, before lava gets to you? "))
+        
+        if option==1:
+            print( name, " , you just climbed the watch tower and reached the top.")
+            option1=choice1(option)
+          
+        
+        if option==2:
+            print(name, " , you are in the jungle now. ")
+            option2 = choice2(option)
+        if option == 3:
+            print (name, ", you are the beach where you can hear the sound of waves. Danger is still dangling.")
+            option3 = choice3(option)
+            
+    
+        while option <1 or option>3 :
+            option = int(input("Choose option from above. What do you choose? "))  
+    
+        print (" ")
+        again = input("Would you like to play again? (yes/no)")
+    print("Thank you for playing! Have a mathemagical day!")
+    
 
 def room4():
     #room4
