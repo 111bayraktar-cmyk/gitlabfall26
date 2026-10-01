@@ -735,7 +735,210 @@ def room10():
 def room11():
     #room11
     #Timothy Duong
+    first_decision_results = []
+    first_decision_results.append("You woke up late again! This was the last straw. You got fired from work. Restart the game.")
+    first_decision_results.append("You brush your teeth, shower, and get dressed. Time to go to work!")
+    first_decision_results.append("Oops, it turns out that you don't have sick days left. Restart the game.")
+    second_decision_results = []
+    second_decision_results.append("It took too long to ride to work and you were late again! You got fired. Restart the game.")
+    second_decision_results.append("There is an ongoing strike and the bus got delayed. You got fired from work for being late. Restart the game.")
+    second_decision_results.append("You got to work just on time!")
+    third_decision_results = []
+    third_decision_results.append("You got to your classroom right before the bell rang!")
+    third_decision_results.append("The copy machine jammed, and caused you go be late. You got fired. Restart the game.")
+    third_decision_results.append("Your coworker spent too much time talking and now you're late and got fired. Restart the game.")
+    fourth_decision_results = []
+    fourth_decision_results.append("Later, one of your students' parents filed a complaint. You got fired. Restart the game.")
+    fourth_decision_results.append("Unfortunately, an administrator decided to evaluate your lesson today. You got fired. Restart.")
+    fourth_decision_results.append("The lesson went fine though could have been better.")
+    fifth_decision_results = []
+    fifth_decision_results.append("It's a little awkward buying lunch with the students but you're not hungry anymore.")
+    fifth_decision_results.append("You didn't make it back on time. You got fired. Restart the game.")
+    fifth_decision_results.append("You got too hungry to teach effectively during an important evaluation. You got fired. Restart.")
+
+    time.sleep(1)
+    print()
     print("Survive a Day of Work!")
+    time.sleep(1)
+    def main_menu():
+        print()
+        name = input("Please enter your name: ")
+        time.sleep(0.5)
+        print()
+        print("Hello", name, "it's morning and you have just woken up. What do you do?")
+        time.sleep(1)
+        print("1. Press the snooze button on your alarm")
+        time.sleep(0.3)
+        print("2. Get ready to go to work")
+        time.sleep(0.3)
+        print("3. Call in sick")
+        time.sleep(0.5)
+        return name
+
+    def hint():
+        choice = ""
+        while choice != "yes" and choice != "no":
+            choice = input("Would you like a hint? yes/no: ")
+            time.sleep(0.3)
+            if choice == "yes":
+                time.sleep(0.5)
+                print("Choose the answer that would most likely get you through the work day.")
+                time.sleep(1)
+            elif choice != "no":
+                time.sleep(0.5)
+                print("You must answer with yes or no")
+                time.sleep(0.5)
+
+    def first_decision():
+        choice = int(input("What do you choose? "))
+        time.sleep(0.5)
+        if choice == 1:
+            print(first_decision_results[0])
+            time.sleep(0.5)
+            return "restart"
+        elif choice == 2:
+            print(first_decision_results[1])
+            time.sleep(0.5)
+            return "continue"
+        elif choice == 3:
+            print(first_decision_results[2])
+            time.sleep(0.5)
+            return "restart"
+
+    def second_decision(name):
+        print()
+        print("How will you go to work today,", name)
+        time.sleep(0.5)
+        print("1. Ride your bike to work")
+        time.sleep(0.3)
+        print("2. Take the bus to work")
+        time.sleep(0.3)
+        print("3. Drive to work")
+        time.sleep(0.5)
+        choice = int(input("What do you choose? "))
+        time.sleep(0.5)
+        if choice == 1:
+            print(second_decision_results[0])
+            time.sleep(0.5)
+            return "restart"
+        elif choice == 2:
+            print(second_decision_results[1])
+            time.sleep(0.5)
+            return "restart"
+        elif choice == 3:
+            print(second_decision_results[2])
+            time.sleep(0.5)
+            return "continue"
+
+    def third_decision(name):
+        print()
+        print("You are now at work. What do you do next,", name)
+        time.sleep(0.5)
+        print("1. Go to your classroom")
+        time.sleep(0.3)
+        print("2. Go make copies")
+        time.sleep(0.3)
+        print("3. Chat with a coworker")
+        time.sleep(0.5)
+        choice = int(input("What do you choose? "))
+        time.sleep(0.5)
+        if choice == 1:
+            print(third_decision_results[0])
+            time.sleep(0.5)
+            return "continue"
+        elif choice == 2:
+            print(third_decision_results[1])
+            time.sleep(0.5)
+            return "restart"
+        elif choice == 3:
+            print(third_decision_results[2])
+            time.sleep(0.5)
+            return "restart"
+
+    def fourth_decision():
+        print()
+        print("You are now in your classroom, and you realize you forgot to plan for today's lessons. What do you do?")
+        time.sleep(0.5)
+        print("1. Play a movie and give the students a free day")
+        time.sleep(0.3)
+        print("2. Make up a lesson on the spot")
+        time.sleep(0.3)
+        print("3. Use last year's lesson")
+        time.sleep(0.5)
+        choice = int(input("What do you choose? "))
+        time.sleep(0.5)
+        if choice == 1:
+            print(fourth_decision_results[0])
+            time.sleep(0.5)
+            return "restart"
+        elif choice == 2:
+            print(fourth_decision_results[1])
+            time.sleep(0.5)
+            return "restart"
+        elif choice == 3:
+            print(fourth_decision_results[2])
+            time.sleep(0.5)
+            return "continue"
+
+    def fifth_decision(name):
+        print()
+        print("It is now lunchtime, and you realized you forgot to bring your lunch. What do you do next,", name)
+        time.sleep(0.5)
+        print("1. Buy lunch from the cafeteria")
+        time.sleep(0.3)
+        print("2. Drive to Chipotle to buy some food")
+        time.sleep(0.3)
+        print("3. Decide to not eat anything and try to make it to the end of the day")
+        time.sleep(0.5)
+        choice = int(input("What do you choose? "))
+        time.sleep(0.5)
+        if choice == 1:
+            print(fifth_decision_results[0])
+            time.sleep(0.5)
+            return "continue"
+        elif choice == 2:
+            print(fifth_decision_results[1])
+            time.sleep(0.5)
+            return "restart"
+        elif choice == 3:
+            print(fifth_decision_results[2])
+            time.sleep(0.5)
+            return "restart"
+
+    def ending(name):
+        time.sleep(1)
+        for i in range(10):
+            if i%2 == 0:
+                print("               CONGRATULATIONS")
+            else:
+                print()
+            time.sleep(0.2)
+        time.sleep(0.5)
+        print(name, "you made it through the day without getting fired! You won the game!")
+        for i in range(10):
+            if i%2 == 0:
+                print()
+            else:
+                print("               CONGRATULATIONS")
+            time.sleep(0.2)
+
+    play_again = "yes"
+    while play_again == "yes":
+        name = main_menu()
+        hint()
+        first_result = first_decision()
+        if first_result != "restart":
+            second_result = second_decision(name)
+            if second_result != "restart":
+                third_result = third_decision(name)
+                if third_result != "restart":
+                    fourth_result = fourth_decision()
+                    if fourth_result != "restart":
+                        fifth_result = fifth_decision(name)
+                        if fifth_result != "restart":
+                            ending(name)
+
+        play_again = input("Would you like to play again? ")    
 
 def room12():
     #Ceiry Molina
