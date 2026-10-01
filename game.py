@@ -773,10 +773,170 @@ def room22():
     print("Playing in the Fun House.")
 
 def room23():
-    #room23
-    #Mario Magallanes
-    print("")
-    print("Video Game Labyrinth")
+    #room23    
+    # Mario Magallanes
+
+    game = 1
+    option = 0
+    name = input("Greetings, What is your name?: ")
+    print ("")
+    print (name, "You are about to enter the video game labyrinth. You will go through 6 chambers.")
+    print ("Each chamber will have items or fighters for you to select.")
+    print ("Chose carefully. The outcome can be to advance, to reset, or to die for.")
+
+#chamber 1 
+    while game != 0:
+        if game == 1:
+            print("")
+            print("****************")
+            print ("Welcome to the Game of Zelda Chamber.")
+            print (" 1 The Ocarina of Time ")
+            print (" 2 Master Sword ")
+            print (" 3 Hyland Shield ")
+            print ("****************")
+            print (name)
+            option = int(input("Please make your selection: "))
+
+            if option == 1:
+                print ("The Ocarina of Time will let you move forward")
+                game = 2
+        
+            elif option == 2:
+                print ("The Master Sword will let you try again")
+                game = 1
+        
+            elif  option == 3:
+                print ("The Hyland Shield will kill you")
+                game = 0 
+
+#chamber 2 
+        if game == 2:
+            print("")
+            print("****************")
+            print ("Welcome to the Mario World Chamber.")
+            print (" 1 Koopa ")
+            print (" 2 Goomba ")
+            print (" 3 Shy Guy ")
+            print ("****************")
+            print (name)
+            option = int(input("Please make your selection: "))
+
+            if option == 1:
+                print ("You defeated Koopa. Move Forward")
+                game = 3
+        
+            elif option == 2:
+                print ("It is a tie! Try again")
+                game = 2
+        
+            elif  option == 3:
+                print ("The Shy Guy was too much for you!")
+                game = 1 
+
+#chamber 3 
+        if game == 3:
+            print("")
+            print("****************")
+            print ("Welcome to the Contra Chamber.")
+            print (" 1 Spear Gun ")
+            print (" 2 Laser Gun ")
+            print (" 3 Rapid Fire ")
+            print ("****************")
+            print (name)
+            option = int(input("Please make your selection: "))
+
+            if option == 1:
+                print ("The Spear Gun is a keeper. Move Forward")
+                game = 4
+        
+            elif option == 2:
+                print ("The Laser Gun is defective, Try again")
+                game = 3
+        
+            elif  option == 3:
+                print ("Rapid Fire Gun exploded in your hand. Try Again!!")
+                game = 1 
+
+#chamber 4 
+        if game == 4:
+            print("")
+            print("****************")
+            print ("Welcome to the Pac-Man Chamber.")
+            print (" 1 Blinky ")
+            print (" 2 Pinky ")
+            print (" 3 Inky ")
+            print (" 4 Clyde ")
+            print ("****************")
+            print (name)
+            option = int(input("Please make your selection: "))
+
+            if option == 1 or option == 2:
+                print ("You defeated Blinky or Pinky. Move Forward")
+                game = 5
+        
+            elif option == 3:
+                print ("It is a tie! Try again")
+                game = 4
+        
+            elif  option == 4:
+                print ("The Shy Guy was too much for you!")
+                game = 0 
+
+#chamber 5 
+        if game == 5:
+            print("")
+            print("****************")
+            print ("Welcome to the Street Fighter Chamber.")
+            print (" 1 Hadouken ")
+            print (" 2 Shoryuken ")
+            print (" 3 Sonic Boom ")
+            print ("****************")
+            print (name)
+            option = int(input("Please make your selection: "))
+
+            if option == 1:
+                print ("The Hadouken served you well! Move to the next level")
+                game = 6
+        
+            elif option == 2:
+                print ("It is a tie! Try again")
+                game = 2
+        
+            elif  option == 3:
+                print ("The Sonic Boom took you off!")
+                game = 0 
+
+#chamber 6 
+        if game == 6:
+            print("")
+            print("****************")
+            print ("Welcome to the Castlevania's Chamber. Select your opennet Trevor Belmont!")
+            print (" 1 Count Dracula")
+            print (" 2 Medusa ")
+            print (" 3 Death ")
+            print ("****************")
+            print (name)
+            option = int(input("Please make your selection: "))
+
+            if option == 1:
+                print ("You defeated the game!!!")
+                print (name)
+                game = int(input("Enter 1 if you wan to play again and 0 to end the game: "))
+        
+            elif option == 2:
+                print ("It is a tie! Try again")
+                game = 6
+        
+            elif  option == 3:
+                print (name)
+                print ("Since you had an honorable defeat. Death will grant you a second cahnce!")
+                game = 1 
+
+        if game == 0: 
+            print("")
+            print ("You lost your life! Thank you for playing")
+            print (name)
+            game = int(input(" Enter 1 if you wish to play again. 0 if you don't:  "))
 
 def room24():
     #room24
