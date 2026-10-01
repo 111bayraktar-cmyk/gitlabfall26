@@ -93,7 +93,7 @@ def room17():
     print("Two Minute Drill")
 
 def room18():
-i   #room18
+   #room18
     #Cesar Cano
     print("Dark Gengar.")
 
