@@ -81,6 +81,124 @@ def room15():
     #room15
     #Jitender Rajpoot
     print("Final Destination.")
+   # def room15():
+    #room15
+    #Jitender Rajpoot
+    print("Good choice. You've avoided drowning in the previous room.")
+    userName = input("Enter your name: ")
+
+    def play_game():
+
+      print("Hi ", userName, ", welcome to 'Final Destination'--an interactive experience in which you navigate death, I mean, navigate your way to the moon and back to Earth. Safe journey!")
+      points = 0        #new feature keep score for correct decisions
+      #decision 1
+      print("Choose your spacecraft:")
+
+      spacecraft = ["Space Shuttle", "Solar Shuttle", "Prototype Shuttle"]    #list feature
+      index = 0
+      for item in spacecraft:               #loop to print list items with their index+1
+        index = index+1
+        print(index, item)
+
+      choice1 = input("Enter 1, 2, or 3: ")
+
+      if choice1 == "1":
+        print("Sorry, rocket fuel prices are unaffordable. This shuttle can't fly to the moon. Flooding from the main room blocks your exit, so you can't escape and drown to deaty, Sorry, Game over!")
+      elif choice1 == "2":
+        points = points + 10            #add points for correct decision
+        print("Great choice! Sun's fusion will power you to the moon. Points: ", points)
+        #Decision 2
+        print("Choose your flight path:")
+
+        flightPath = ["Lunar Orbit", "Fly to Moon and back", "Land on Moon"]
+        index = 0
+        for item in flightPath:
+          index = index + 1
+          print(index, item)
+
+        choice2 = input("Enter 1, 2, or 3: ")
+
+        if choice2 == "1":
+          print("The shuttle remains in an infinite loop rotating around the moon. Sorry, you die due to dehydration after 88 days. Game over!")
+        elif choice2 == "2":
+          print("You returned back to Earth but never stepped on the Moon.")
+          print("Although you technically saw the Moon from close range, you return to Room 15, which is flooded. You valiantly struggle but succumb to a drowning death after 33 minutes. Sorry, Game over!")
+        elif choice2 == "3":
+          points = points + 20
+          print("Well done! You made it to the Moon. Now let's explore, but first let's nourish your body. Points: ", points)
+          #Decision 3
+          print("What do you want to eat?")
+
+          nourishment = ["High energy food", "Freeze dried meal", "Canned tuna and peppers with aioli"]
+          index = 0
+          for item in nourishment:
+            index = index + 1
+            print(index, item)
+
+          choice3 = input("Enter 1, 2, or 3: ")
+
+          if choice3 == "1":
+            print("This food has too many calories. Unfortunately your heart can't handle your low blood pressure but high blood glucose levels.")
+            print("Your heart decides to give up rather than continue the torture. Sorry, you die. Game over!")
+          elif choice3 =="2":
+            points = points + 30
+            print("These items have an unsavory flavor and undesirable texture but exactly what your body needs. Points: ", points)
+            #Decision 4
+            print("Now let's find an activity to do. What would you like?")
+
+            activity = ["Collect Moon Rocks", "Conduct Chemical Experiments", "Take Photographs"]
+            index = 0
+            for item in activity:
+              index = index + 1
+              print(index, item)
+
+            choice4 = input("Enter 1, 2, or 3: ")
+
+            if choice4 == "1":
+              points = points + 40
+              print("This was your best move! You've found rare Moon Diamonds, which will pay for the next 3 generations of your family. Points:", points)
+              print("You should head back to Earth and enjoy your wealth. Where do you want to land?")
+
+              landing = ["Ocean landing", "Desert Landing", "Landing Pad"]
+              index = 0
+              for item in landing:
+                index = index + 1
+                print(index, item)
+
+              choice5 = input("Enter 1, 2, or 3: ")
+              if choice5 == "1":
+                points = points + 50
+                print("You win! Ocean was the safest and least dangerous space to re-enter Earth. Enjoy your Moon Diamonds! Points: ", points)
+              elif choice5 == "2":
+                print("The ambient temprature above the desert combined with heat from your re-entry velocity disintegrated the shuttle.")
+                print("Everything including you and the Moon Diamonds dissolved into the thin air. Sorry, game over!")
+              elif choice5 == "3":
+                print("The booster engines to decelerate the shuttle in order to land malfunctioned and accelerated instead.")
+                print("At the sound of speed, you died alongside a Sonic boom. Sorry, game over!")
+
+            elif choice4 == "2":
+              print("Sorry, the gases released from the chemical reactions are poisonous.")
+              print("From an allergic reaction, our sweat pores extract every drop of blood from you leaving you dead. Sorry, game over!")
+            elif choice4 == "3":
+              print("The batteries aren't meant to operate in Moon's extreme temperatures. The camera explodes severing your cranial nerves.")
+              print("So you feel no pain, but take 72 hours to take your last breath. Sorry, game over!")
+
+          elif choice3 == "3":
+            print("This was the worst choice. All items were infected with botulinum toxin.")
+            print("You died a slow suffocating death from paralysis of your lungs. Sorry, game over!")
+      elif choice1 == "3":
+        print("Sorry, the Prototype wasn't tested properly. It exploded midflight. Sorry, you die. Game over!")
+
+
+    play_game()
+
+    play_again = input("Do you want to try navigating to the moon and back again? Type 'yes' or 'no': ")
+
+    while play_again == "yes":
+      play_game()
+      play_again = input("Would you like to try again? ")
+    else:
+      print("Thanks for trying 'Final Destination.' Safe travels!", userName)
 
 def room16():
     #room16
