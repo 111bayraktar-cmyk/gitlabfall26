@@ -179,7 +179,143 @@ def room3():
 def room4():
     #room4
     #Alejandra Ibarra
-    print("Pokemon Master")
+    print("Pokemon Master!")
+
+    newlist = ["Pick a starter pokemon:","1.Piplup","2.Chimchar","3.Turtwig"]
+        
+    option1 = ["Pick a starter pokemon:","1.Squirtle","2.Charmander","3.Bulbasaur"]
+
+    option2 = ["How do you want to dress your Pokemon:","1.Goggles","2.Top Hat","3.Party Hat"]
+
+    option3 = ["What do you want to do with your starter:","1.Free Play","2.Battle Ground","3.Show off your pokemon!"] 
+
+    option4 = ["Do you wish to evolve your Pokemon?:","1.No.","2.Evolve Once","3.Fully Evolve"]
+
+    option5 = ["Your Pokemon is being attacked, how do you wish to proceed?:","1.Join your Pokemon in battle.","2.Catch the Pokemon yourself.","3.Watch your Pokemon battle."]
+
+    redo_game = ["Do you want to play again?", "1.Yes", "2.No"]
+    again = 1
+    while(again==1):
+        print("Welcome Trainer, your Pokemon adventure begins now! Lets see if you have what it takes to become a Pokemon Master!")
+
+#Level1
+    
+        choice = int(input("Do you want starters from generation 1 or 4? "))
+        if choice == 1:
+
+            for item in option1:
+                print(item)
+
+            starter_choice = int(input("Pick a number 1-3: "))
+
+            if starter_choice == 1:
+                print("A smart choice! Squirtle is ready to make a splash and take on whatever challenges come your way.")
+
+            if starter_choice == 2:
+                print("Your adventure is heating up. Charmander is ready to bring the energy and power through every challenge.")
+
+            if starter_choice == 3:
+                print("The best choice! Bulbasaur is ready to grow, learn, and tackle every challenge that comes your way.")
+        else:
+
+            for item in newlist:
+                print(item)
+        
+            starter_choice = int(input("Pick a number 1-3: "))
+
+            if starter_choice == 1:
+                print("Leave the familiar behind and experience the Sinnoh region!")
+                print("Piplup is excited to start your journey together!")
+
+            if starter_choice == 2:
+                print("Leave the familar behind and experience the Sinnoh region!")
+                print("Chimchar is bursting with energy and ready to start your journey together!")
+
+            if starter_choice == 3: 
+                print("Leave the familiar behind and experience the Sinnoh region!")
+                print("Turtwig is ready to step forward and follow you on your adventure!")
+
+    
+        print("Before begining your journey lets dress your Pokemon!")
+
+#Minigame/Loop
+        mini=True
+        print("Lets play a minigame.")
+        pokemans = ["1.Luigia", "2.Diglett", "3.Mudkip", "4.Drilbur", "5.Garchomp", "6.Applin"]
+        while(mini):
+            for poke in pokemans:
+                print(poke)
+            guess = int(input("Guess what my favorite Pokemon is: "))
+            if guess == 6:
+                mini = False 
+        print("Congrats you guessed correctly, I love Applin and his green shiny!<3")
+
+#Level2
+        for item in option2:
+            print(item)
+
+        dress_choice = int(input("Pick a number 1-3: "))
+
+        if dress_choice == 1:
+            print("Adventure mode on! Your Pokemon is geared up and ready to explore, discover, and take on the next challenge!")
+
+        if dress_choice == 2:
+            print("Fancy choice, trainer! Your Pokemon is looking ready for a VIP battle.")
+
+        if dress_choice == 3:
+            print("Party time! Your Pokemon is ready to party AND play.")
+#Level3
+        for item in option3:
+            print(item)
+    
+        journey = int(input("Pick a number 1-3: "))
+
+        if journey == 1:
+            print("No rules, no pressure... just explore, experiment and have fun! Take your Pokemon on an adventure and see what you discover!")
+
+        if journey == 2:
+            print("Its time to put your skill to the test. Choose your moves wisely, earn XP, and see if you have waht it take to battle!")
+
+        if journey == 3:
+            print("Your Pokemon is ready for the spotlight! Show off your style and let everyone see your AWESOME Pokemon. Remember: Strike a pose, trainer!")
+
+        for item in option4:
+            print(item)
+
+        evolution = int(input("Pick a number 1-3: "))
+
+        if evolution == 1:
+            print("Staying just the way you are! Your Pokemon doesnt need to evolve to be awesome. Keep training, keep learning, and show everyone what you can do!")
+
+        if evolution == 2:
+            print("Evolution unlocked! Your Pokemon has leveled up and grown stronger. Look at you go, trainer.")
+
+        if evolution == 3:
+            print("You've powered up your Pokemon ALL the way. Your dedication has paid off, and your Pokemon has reached its final form. You are on step close to become a Pokemon Master.")
+
+#Level5
+    
+        for item in option5:
+            print(item)
+
+        attack = int(input("Pick a number 1-3: "))
+
+        if attack == 1:
+            print("Teamwork makes the dream work, trainer! Your Pokemon is stonger wit you by its side. You really are a Pokemon Master.")
+
+        if attack == 2:
+            print("You fool! You should know working together is ALWAYS the right choice. You are not ready to be a Pokemon Master.")
+
+        if attack == 3:
+            print("You stand back and watch your Pokemon battle?? Uh-Oh. NEVER leave your Pokemon to battle alone! Your Pokemon needs you by their side.")
+
+
+#End Game
+    
+        for item in redo_game:
+            print(item)
+    
+        again = int(input("Please enter 1 or 2: "))
 
 def room5():
     #room5
