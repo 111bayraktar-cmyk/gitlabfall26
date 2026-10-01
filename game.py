@@ -1789,6 +1789,304 @@ def room31():
     #Karl Kottman
     print("Musical Odyssey")
 
+
+    psychsongs = ["'Time of the Season'","'Hung up on a Dream'","'Maybe After He's Gone'","'I am the Walrus'","'Blue Jay Way'","'Strawberry Fields Forever'","'Purple Haze'","'Hey Joe'","'The Wind Cries Mary'","'The End' by The Doors","'In-A-Gadda-Da-Vida' by Iron Butteryfly","'Shangri-la' by The Kinks"]
+
+    punksongs = ["'Bombshell'","'Caution'","'Sound System'","'Gacked on Anger'","'GFY'","'Got You'","'Triumph of the Swill'","'Macho Insecurity'","'Take This Job and Shove It'","'New Noise'by Refused","'Don't Light My Fire' by Otoboke Beaver","'Waiting Room' by Fugazi"]
+
+    indiesongs = ["'Shady Lane'","'Type Slowly'","'Stereo'","'Pedestrian at Best'","'Depreston'","'Nobody Really Cares If You Don't Go to the Party'","'Stupidity Tries'","'Happiness/The Gondola Man'","'Somebody That I Used To Know'","'All Caps'by MF Doom'","'Respiration' by Black Star","'Ghostwriter' by RJD2"]
+
+    def psychedelia():
+        print("You've entered the psychedelic room where you find a turntable and the following three records:")
+
+        print("1. 'Odessey and Oracle' by The Zombies")
+        print("2. 'Magical Mystery Tour' by The Beatles")
+        print("3. 'Are You Experienced' by Jimi Hendrix")
+
+        psychalbum = int(input("Enter the number of the album you want to play:"))
+
+        if (psychalbum == 1):
+            print("You're getting lost in the sound of The Zombies and can't get enought, especially of these three tracks:")
+
+            print("1.", psychsongs[0])
+            print("2.", psychsongs[1])
+            print("3.", psychsongs[2])
+
+            psychsong1 = int(input("Enter the number of the song you want to listen to on repeat:"))
+
+            if (psychsong1 == 2):
+                print("You've reached a dream-like state. Do you want to:")
+
+                print("1. ...keep dreaming?")
+                print("2. ...listen to more music?")
+                print("3. ...wake up?")
+
+                whatnext = int(input("Enter the number of your choice:"))
+
+                if (whatnext == 2):
+                    print("Great! What song will you listen to next?")
+
+                    print("1.", psychsongs[9])
+                    print("2.", psychsongs[10])
+                    print("3.", psychsongs[11])
+
+                    finalsong = int(input("Enter the number of your song choice:"))
+
+                    if (finalsong == 1):
+                        print("This song is too long! Sadly, you can't finish your musical odyssey,", name,".")
+
+                    elif (finalsong == 2):
+                        print("This song is too long! Sadly, you can't finish your musical odyssey,", name,".")
+
+                    else:
+                        print("Congratulations! You've reached Shangri-la and completed your musical odyessey! Enjoy your newfound enlightenment!")
+            
+
+                elif (whatnext == 1):
+                    print("You slept too long! Sadly, your musical odyessy is over,", name,".")
+
+                else:
+                    print("You've awakened from your psychedelic experience and are ready for something new.")
+                    musical_odyssey()
+
+
+            else:
+                print("Listening to too much of The Zombies has turned you into a Zombie! Now you can't stop listening! Sadly, your musical odyssey has come to a premature end,", name,".")
+
+        
+
+        elif (psychalbum == 2):
+            print("You love the mystery tour! Which song will you repeat?")
+
+            print("1.", psychsongs[3])
+            print("2.", psychsongs[4])
+            print("3.", psychsongs[5])
+
+            psychsong2 = int(input("Enter the number of the song you want to repeat:"))
+
+            if (psychsong2 == 1):
+                print("You've turned into a walrus! Sadly, you can't finish your musical odyssey like this,", name,"!")
+        
+            else:
+                print("Excellent choice! But now it's time to try listening to something different.")
+                punk()
+
+        else:
+            print("You're experienced now! Which song do you want to hear again?")
+
+            print("1.", psychsongs[6])
+            print("2.", psychsongs[7])
+            print("3.", psychsongs[8])
+
+            psychsong3 = int(input("Enter the number of the song you want to repeat:"))
+
+            if (psychsong3 == 1):
+                print("You got lost in the haze and have to start over.")
+            else:
+                print("Excellent choice! But now it's time to try listening to something different.")
+                indie()
+
+
+    def punk():
+        print("You've entered a disheveled room with a turntable and the following three records:")
+
+        print("1. 'Operation Ivy' by Operation Ivy")
+        print("2. 'Amyl and The Sniffers' by Amyl and The Sniffers")
+        print("3. 'Bedtime for Democracy' by Dead Kennedys")
+
+        punkalbum = int(input("Enter the number of the album you want to play:"))
+
+        if (punkalbum == 1):
+            print("You loved this classic album! Which song do you want to listen to again?")
+
+            print("1.", punksongs[0])
+            print("2.", punksongs[1])
+            print("3.", punksongs[2])
+
+            punksong1 = int(input("Enter the number of the song you want to repeat:"))
+
+            if (punksong1 == 2):
+                print("Since you liked", punksongs[1],", you might like one of these songs:")
+
+                print("1.", punksongs[9])
+                print("2.", punksongs[10])
+                print("3.", punksongs[11])
+
+                punksong4 = int(input("Enter the number of the song you want to hear:"))
+
+                if (punksong4 == 1):
+                    print("You're ready for a new beat.")
+                    psychedelia()
+
+                elif (punksong4 == 2):
+                    print("Great song! But now you need something slower.")
+                    indie()
+
+                elif (punksong4 == 3):
+                    print("You waited too long. Sadly, your musical odyssey has ended,", name,".")
+
+            else:
+                print("You got too pumped up! Time for something slower.")
+                indie()
+
+
+        if (punkalbum == 2):
+            print("You can't get enough of Amyl! Which track do you want to listen to again?")
+
+            print("1.", punksongs[3])
+            print("2.", punksongs[4])
+            print("3.", punksongs[5])
+
+            punksong2 = int(input("Enter the number of the song you want to repeat:"))
+
+            if (punksong2 == 3):
+                print("Great song! But time for a change of pace.")
+                psychedelia()
+
+            else:
+                print("Alright, let's take it down a notch.")
+                indie()
+
+        if (punkalbum == 3):
+            print("Nice choice! Which song did you like the best?")
+
+            print("1.", punksongs[6])
+            print("2.", punksongs[7])
+            print("3.", punksongs[8])
+
+            punksong3 = int(input("Enter the number of your choice:"))
+
+            if (punksong3 == 3):
+                print("You quit your job! Now you have more time for music! Let's try another room.")
+                psychedelia()
+
+            elif (punksong3 == 2):
+                print("It's great you're not too macho! Now let's listen to something different.")
+                indie()
+
+            elif (punksong3 == 1):
+                print("I'm afraid the swill has triumphed. Sadly, your musical odyssey has come to an end,", name,".")
+
+
+
+
+
+    def indie():
+        print("You've entered a hip room with a turntable and the following three records:")
+
+        print("1. 'Brighten the Corners' by Pavement")
+        print("2. 'Sometimes I Sit and Think, and Sometimes I Just Sit' by Courtney Barnett")
+        print("3. 'Figure 8' by Elliot Smith")
+
+        indiealbum = int(input("Enter the number of the album you want to play:"))
+
+        if (indiealbum == 1):
+            print("Did you catch all the lyrics? Which song on the album deserves another listen?")
+
+            print("1.", indiesongs[0])
+            print("2.", indiesongs[1])
+            print("3.", indiesongs[2])
+
+            indiesong1 = int(input("Enter the number of the song you want to hear again:"))
+
+            if (indiesong1 == 1):
+                print("Great choice! Be sure to listen to it's B-side, 'Harness Your Hopes', as well before you move on to the next room.")
+                punk()
+
+            elif (indiesong1 == 3):
+                print("What a classic indie rock song! Want to listen to a classic indie hip-hop track?")
+
+                print("1.", indiesongs[9])
+                print("2.", indiesongs[10])
+                print("3.", indiesongs[11])
+
+                indiesong4 = int(input("Enter the number of the track you want to hear:"))
+
+                if (indiesong4 == 1):
+                    print("MF Doom will let you continue your musical odyssey.")
+                    psychedelia()
+
+                else:
+                    print("Hope you enjoyed that tune! Now it's time for something different.")
+                    punk()
+
+            else:
+                print("'Stereo' broke your stereo. Sadly, your musical odyssey has come to an early end,", name,".")
+
+
+        if (indiealbum == 2):
+            print("Which song on the album deserves another listen?")
+
+            print("1.", indiesongs[3])
+            print("2.", indiesongs[4])
+            print("3.", indiesongs[5])
+
+            indiesong2 = int(input("Enter the number of the song you want to hear again:"))
+
+            if (indiesong2 == 1):
+                print("This song is definitely more than pedestrian. Continue your musical odyssey.")
+                psychedelia()
+
+            elif (indiesong2 == 2):
+                print("Nice choice, but a bit depressing. Time to liven things up!")
+                punk()
+
+            else:
+                print("Unfortunately, nobody really cares if you finish your musical odyessey. Goodbye,", name,".")
+
+
+        if (indiealbum == 3):
+            print("Such a good album! Which track do you want to hear again?")
+
+            print("1.", indiesongs[6])
+            print("2.", indiesongs[7])
+            print("3.", indiesongs[8])
+
+            indiesong3 = int(input("Enter the number of the song you want to repeat:"))
+
+            if (indiesong3 == 2):
+                print("'Happiness' made you too sad to continue your musical odyssey. Maybe you can try again when you feel better.")
+
+            elif (indiesong3 == 1):
+                print("Stupidity succeeded! You want to listen to more. Step into the next room.")
+                punk()
+
+            else:
+                print("You've moved on and no longer care about your musical odyssey. Maybe you'll try again if you change your mind.")
+
+            
+    def musical_odyssey():
+        print("Before you are three doors named as follows:")
+
+        print("1. Psychedelia")
+        print("2. Punk")
+        print("3. Indie")
+
+        choice1 = int(input("What number door will you enter?:"))
+
+        if (choice1 == 1):
+            psychedelia()
+
+        elif (choice1 == 2):
+            punk()
+
+        elif (choice1 == 3):
+            indie()
+
+    name = input("Welcome to the Land of Rock! What is your name?:")
+
+    print("Hello,", name,"! You are about to embark on a musical odyssey. To fully complete this experience, you must choose the right path forward. But there is only one path that will take you all the way, so choose wisely.")
+
+    while True:
+        answer = input("Whether it's your first time or you're coming back for more, are you ready to embark on a musical odyssey?:")
+        if (answer == "yes"):
+            musical_odyssey()
+
+        else:
+            break
+
+
+
 def room32():
     #room32
     print("This door is locked.")
