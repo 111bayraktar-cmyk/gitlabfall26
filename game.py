@@ -63,9 +63,125 @@ def room11():
     print("Survive a Day of Work!")
 
 def room12():
-    #Ceiry Moline
+    #Ceiry Molina
     #room12
     print("Ceiry's Game!")
+
+    opt1 = ["Choose you Jedi:","1.Luke Skywalker","2.Obi Wan","3.Ahsoka"]
+
+    opt2 = ["How do you want to eqip your compasnion:","1.Jedi Robes","2.Clome Armor","3.Mandalorian Cape"]
+
+    opt3 = ["What mission do you want  to begin:","1.Explore a New Planet", "2.Battle the Empire","3.Attend a Galactic Celebration"]
+
+    opt4 = ["Do you wish to upgrade your companion's Force abilities?:","1.No", "2.Increase Training","3.Master the Force"]
+
+    opt5 = ["The Empire is attacking! How do you wish to proceed?:","1.Fight alongside your companion","2.Face the enemy alone","3.Stay back and watch"]
+
+    opt6 = ["While on a mission you find a box! How do you wish to proceed?:","1.Open it", "2.Ignore it","3.Inspect it"]
+
+    redo_game = ["Do you want to play again?","1.Yes","2.No"]
+    again = 1 
+    while(again ==1):
+        print("Welcome, young Padawan! Your Star Wars adventure begins now. May the Force be with you!")
+
+    #Level1
+        for item in opt1:
+            print(item)
+
+        starter_choice = int(input("Pick a number 1-3:"))
+
+        if starter_choice ==1:
+            print("Luke Skywalker joins your journey! His courage and determination will guide you through the galaxy.")
+
+        if starter_choice ==2:
+            print("A wise choice. Obi Wan is ready to share the wisdom of the Jedi Order")
+
+        if starter_choice ==3:
+            print("Excellent choice! Ahsoka is prepared to face% any challenge and protect the galaxy")
+        
+        print("Before beginning your mission, let's prepare you companion!")
+
+    #Level2
+        for item in opt2:
+            print(item)
+    
+        dress_choice = int(input("Pick a number 1-3:"))
+
+        if dress_choice ==1:
+            print("Classic Jedi style! Your companion is prepared for an honorable mission across the stars.")
+
+        if dress_choice ==2:
+            print("Battle ready! Your companion looks prepared to take on Imperial forces.")
+        if dress_choice ==3:
+            print("An impressive look! Your companion stands out as a true galactic hero.")
+
+    #Level3 
+        for item in opt3:
+            print(item)
+
+        journey = int(input("Pick a number 1-3:"))
+
+        if journey ==1:
+            print("Adventure awaits! Discover hidden worlds, ancient secrets, and new allies throughout7 the galaxy.")
+
+        if journey ==2:
+            print("The battle begins! Use strategy, teamwork, and the Force to defeat the Empire")
+
+        if journey ==3: 
+            print("A celebration across the galaxy! Show off your companion and enjoy the festivities")
+
+    #Level4
+        for item in opt4:
+            print(item)
+
+        evolution = int(input("Pick a number 1-3:"))
+
+        if evolution ==1:
+            print("Your companion remains as they are. Remember true strength comes from within")
+
+        if evolution ==2:
+            print("Training complete!Your companion has grown stronger and gained new Force abilities")
+
+        if evolution ==3:
+            print("Force mastery achieved! Your companion has reached their highest potential and become a legendary hero")
+
+    #Level5
+
+        for item in opt5:
+            print(item)
+
+        attack = int(input("Pick a number 1-3:"))
+
+        if attack ==1:
+            print("Together you fight! The force is strongest when allies stand side by side;")
+
+        if attack ==2:
+            print("Bravery is admirable, but teamwork is the Jedi way. Facing the enemy alone is risky.")
+
+        if attack ==3:
+            print("Standing aside while others fight is not the Jedi path. Heroes help those in need!")
+
+    #Level6 
+
+        for item in opt6:
+            print(item)
+
+        box_choice = int(input("Pick a number 1-3:"))
+
+        if box_choice ==1:
+            print("Congrats you found a purple light saber!!")
+
+        if box_choice ==2:
+            print("You leave the box alone very safe choice!")
+
+        if box_choice ==3:
+            print("You find a green light saber, very good choice!")
+
+    #End Game 
+        for item in redo_game:
+            print(item)
+
+        again = int(input("Please enter 1 or 2:"))
 
 def room13():
     #room13
